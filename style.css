@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fafafa;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+  color: #6a4c93;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #6a4c93;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #6a4c93, #ffb4a2, #bde0fe);
+  color: #fff;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.hero .highlight {
+  color: #ffe066;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.btn {
+  padding: 12px 24px;
+  background: #fff;
+  color: #6a4c93;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ffe066;
+  color: #333;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #6a4c93;
+}
+.section-subtitle {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.skills-list span {
+  background: #fcefee;
+  color: #6a4c93;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.skills-list span:hover {
+  background: #6a4c93;
+  color: #fff;
+}
+
+/* Projects */
+.projects {
+  background: #f7f7f7;
+}
+.project-card {
+  background: #fff;
+  margin: 20px auto;
+  padding: 25px;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About */
+.about {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Contact */
+.contact-info a {
+  color: #6a4c93;
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}

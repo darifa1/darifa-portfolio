@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darifa | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Darifa</div>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Hi, I’m <span class="highlight">Darifa</span></h1>
+    <p>I build clean, responsive websites and web apps that focus on user experience and performance.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Tools I work with daily and keep improving:</p>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git/GitHub</span>
+      <span>Python</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card fade-in">
+      <h3>Portfolio Website</h3>
+      <p>A fully responsive personal portfolio site to highlight my projects, skills, and contact info.</p>
+    </div>
+    <div class="project-card fade-in">
+      <h3>Next Project</h3>
+      <p>Coming soon...</p>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about section">
+    <h2 class="section-title">About Me</h2>
+    <p>I started out with a diploma in software development and kept pushing myself by building projects on my own. 
+       I believe in learning by doing, and every project I create is a chance to explore, improve, and apply new ideas. 
+       Outside coding, I’m curious about design, problem-solving, and creating things that people actually enjoy using.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <h2 class="section-title">Contact</h2>
+    <p>Want to talk about a project or just say hi?</p>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>GitHub: <a href="#">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/yourusername</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Darifa | All rights reserved</p>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
