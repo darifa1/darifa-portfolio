@@ -112,30 +112,7 @@ body {
 }
 
 /* Projects */
-.projects {
-  background: #f7f7f7;
-}
-.project-card {
-  background: #fff;
-  margin: 20px auto;
-  padding: 25px;
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-.project-card:hover {
-  transform: translateY(-5px);
-}
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+
 
 #projects {
   padding: 60px 20px;
@@ -217,4 +194,5 @@ footer {
   padding: 15px;
   font-size: 14px;
 }
+
 
